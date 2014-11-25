@@ -31,43 +31,46 @@ continuously~stratified~fluid~taking\\~into~account~diffusivity~effects}}
   Institute for Problems in Mechanics of the RAS\\
   Moscow, Russia
   }
-\date[ 2014]{Firth International Scientific School for Young Scientists. \\"Waves and vortices in complex media", 2014}
+\date[ 2014]{Firth International Scientific School for Young Scientists \\ \bf{Waves and vortices in complex media}}
 
 \begin{document}
 
 \frame{
-	\titlepage
+    \titlepage
 }
 
 \section[Into]{}
 
 \subsection{Review}
+
 \frame{\frametitle{Review}
 \begin{enumerate}
-\item J.V.S. Rayleigh
-\item J. Lighthill 
-\item Yu.D. Chashechkin 
-\item V.A. Gorodtsov 
-\item T.N. Stevenson 
-\item D.G. Hurley, G.J. Keady 
-\item B.R. Sutherland 
-\item Yu.V. Kistovich  
-\item A.V. Kistovich 
-\item B. Voisin 
+    \item J.V.S. Rayleigh
+    \item J. Lighthill 
+    \item Yu.D. Chashechkin 
+    \item V.A. Gorodtsov 
+    \item T.N. Stevenson 
+    \item D.G. Hurley, G.J. Keady 
+    \item B.R. Sutherland 
+    \item Yu.V. Kistovich  
+    \item A.V. Kistovich 
+    \item B. Voisin 
 \end{enumerate}
 }
 
 \subsection{Color schlirien images oscillation of disk}
+
 \frame{\frametitle{Color schlirien images oscillation of disk}
 \begin{figure}
 \center \includegraphics[width=0.7\linewidth]{disk1.png} 
-\end{figure}}
+\end{figure}
+}
 
 
 
 \section{Math. model}
 \subsection{System coordinate frame}
-\frame{\frametitle{System coordinate frame for analytical analyze}
+\frame{\frametitle{System coordinate frame for analytical calculation}
 \begin{figure}
    \includegraphics[width=0.8\linewidth]{sys-coord.png}
 \end{figure}
@@ -91,7 +94,7 @@ continuously~stratified~fluid~taking\\~into~account~diffusivity~effects}}
 \[
 \left. {\textbf{v}} \right|_{\Gamma}  = \textbf{u}_{0} e^{ - i\omega t},
 \quad
-\kappa _{S} \left. {\frac{{\partial S}}{{\partial n}}} \right|_{\Gamma}  = 0
+\kappa _{S} \left. {\frac{{\partial S}}{{\partial n}}} \right|_{\Gamma}  = \frac{1}{\Lambda} \left. {\frac{{\partial z}}{{\partial n}}} \right|_{\Gamma}
 \]
 
 \[
@@ -111,7 +114,6 @@ continuously~stratified~fluid~taking\\~into~account~diffusivity~effects}}
 \nabla \times \textbf{e}_{z} \Phi + \nabla \times \left( {\nabla \times \textbf{e}_{z} \Psi}  
 \right)
 \]
-
 }
 
 \frame{\frametitle{System equations for functions $\Phi$ and $\Psi$}
@@ -231,11 +233,9 @@ _{\nu \kappa} }  \right)}}{{\varepsilon} }} ,
 \delta _{\kappa}  = \delta _{N} \sqrt {{\textstyle{{2\varepsilon}  \over 
 {\sin\theta} }}}
 \]
-
-
 }
 
-\frame{\frametitle{Viscous stratified fluid take into diffusion.Vetrical component of the velocity}
+\frame{\frametitle{Viscous stratified fluid take into diffusion. Vetrical component of the velocity}
 
 \[
 v_{\zeta} \approx \int\limits_{ - \infty} ^{ + \infty}  {A_{1} \left( 
@@ -287,8 +287,9 @@ E_{\xi \eta} = exp\left( {ik_{\xi}  \xi + ik_{\eta}  \eta} \right)
 \item OpenFOAM free and open source, under the GNU general public licence (GPL). 
 %The GPL gives users the freedom to modify and redistribute the software and a guarantee of continued free use - 
 %as long as the terms of the GPL are adhered to.
-\item Support of community 
-{\bf http://www.cfd-online.com/Forums/openfoam/}, {\bf http://openfoamwiki.net/}
+\item Support of community:
+\url{http://www.cfd-online.com/Forums/openfoam}, \url{http://openfoamwiki.net}, 
+\url{http://stackoverflow.com/}
 \item Support open-source Linux platform (openSUSE, Ubuntu, RHEL)
 \end{enumerate}
 \textbf{Minuses:}
@@ -339,20 +340,20 @@ To construct the mesh used a standard utility of OpenFOAM \textbf{blockMesh} or 
 \end{figure}
 }
 
-\subsection{Create mesh}
-\frame{\frametitle{Create mesh}
-\textbf{Create mesh using blockMesh utility:}
-
-[user@server]\$ blockMesh -case name-of-model
-\begin{figure}
-   \includegraphics[width=0.99\linewidth]{grid-model.png}
-\end{figure}
-\textbf{Boundary conditions:}
-
-Top, Botton, Left, Right: freeSteram (U, p), zeroGradient (S)
-
-Plate: oscillating (U), fixedGradient (S)
-}
+% \subsection{Create mesh}
+% \frame{\frametitle{Create mesh}
+% \textbf{Create mesh using blockMesh utility:}
+% 
+% [user@server]\$ blockMesh -case name-of-model
+% \begin{figure}
+%    \includegraphics[width=0.99\linewidth]{grid-model.png}
+% \end{figure}
+% \textbf{Boundary conditions:}
+% 
+% Top, Botton, Left, Right: freeSteram (U, p), zeroGradient (S)
+% 
+% Plate: oscillating (U), fixedGradient (S)
+% }
 
 
 \section{Results}
@@ -537,7 +538,6 @@ Module of velocity. Source - horizontal plate. Type - friction}
 }
 
 \section{Conclusion}
-\subsection{Conclusion}
 \frame{\frametitle{Conclusion}
 \begin{enumerate}
 \item 
@@ -551,10 +551,14 @@ stratification, diffusion);
 \end{enumerate}
 }
 
-\subsection{Thank you}
 \frame{\frametitle{}
-Thank you
-\end{enumerate}
+\begin{center}
+\textcolor{blue}{
+\textbf{Thank you for your attention!\\
+Any questions?}
+\end{center}
+}
+
 }
 
 \end{document} 
