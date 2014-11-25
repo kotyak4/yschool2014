@@ -264,19 +264,19 @@ E_{\xi \eta} = exp\left( {ik_{\xi}  \xi + ik_{\eta}  \eta} \right)
 \]
 }
 
-\subsection{Comparison theoretical analyze and measurement.}
-\frame{\frametitle{Comparison theoretical analyze and measurement. Source is disk $u_{0}=0.25 cm\ s^{-1}$}
-\begin{figure}
-\begin{minipage}{0.47\linewidth}
- \center{\includegraphics[width=0.95\linewidth]{theory-experim-1.png}}\\
-\tiny{$R=1.75$ cm, $N=1.0\ s^{-1}$, $\omega=0.57\ s^{-1}$}
-\end{minipage}
-\begin{minipage}{0.47\linewidth}
- \center{\includegraphics[width=0.95\linewidth]{theory-experim-2.png}}\\
-\tiny{$R=4.0$ cm, $N=1.26\ s^{-1}$, $\omega=1.11\ s^{-1}$}
-\end{minipage}
-\end{figure}
-}
+% \subsection{Comparison theoretical analyze and measurement.}
+% \frame{\frametitle{Comparison theoretical analyze and measurement. Source is disk $u_{0}=0.25 cm\ s^{-1}$}
+% \begin{figure}
+% \begin{minipage}{0.47\linewidth}
+%  \center{\includegraphics[width=0.95\linewidth]{theory-experim-1.png}}\\
+% \tiny{$R=1.75$ cm, $N=1.0\ s^{-1}$, $\omega=0.57\ s^{-1}$}
+% \end{minipage}
+% \begin{minipage}{0.47\linewidth}
+%  \center{\includegraphics[width=0.95\linewidth]{theory-experim-2.png}}\\
+% \tiny{$R=4.0$ cm, $N=1.26\ s^{-1}$, $\omega=1.11\ s^{-1}$}
+% \end{minipage}
+% \end{figure}
+% }
 
 \section{Numerical analyze}
 
@@ -289,20 +289,20 @@ E_{\xi \eta} = exp\left( {ik_{\xi}  \xi + ik_{\eta}  \eta} \right)
 %as long as the terms of the GPL are adhered to.
 \item Support of community 
 {\bf http://www.cfd-online.com/Forums/openfoam/}, {\bf http://openfoamwiki.net/}
-\item Support open-source Linux platform (openSUSE, Ubuntu, Fedora and etc)
+\item Support open-source Linux platform (openSUSE, Ubuntu, RHEL)
 \end{enumerate}
 \textbf{Minuses:}
 \begin{enumerate}
-\item OpenFOAM has no GUI to create grids, but can use other applications such as:
+\item No GUI to create grids, but can use other applications such as:
 GMSH ({\bf http://geuz.org/gmsh/}), Salome ({\bf http://www.salome-platform.org/}) or commercial mesh generators such as:
 Icem CFD ({\bf www.ansys.com}), Gambit ({\bf www.ansys.com}), pro*star Star-CD ({\bf www.cd-adapco.com})
 \end{enumerate}
 }
 
-\subsection{WF process for analyze and solving}
-\frame{\frametitle{Hardware, software and workflow process for analyze and solving}
+\subsection{Infrastructure}
+\frame{\frametitle{Hardware, software and workflow process}
 \begin{figure}
-\center \includegraphics[width=0.95\linewidth]{scheme-openfoam-jira-confluence.png} 
+\center \includegraphics[width=0.95\linewidth]{scheme-infrastructure.png} 
 \end{figure}
 }
 
@@ -537,16 +537,23 @@ Module of velocity. Source - horizontal plate. Type - friction}
 }
 
 \section{Conclusion}
+\subsection{Conclusion}
 \frame{\frametitle{Conclusion}
 \begin{enumerate}
 \item 
 In the general case, in a viscous stratified fluid there are two types of solutions:
-regular (waves) and three type singular solutions. Two of them don't have analogues in homogeneous fluid 
+regular (waves) and three type singular solutions. Two of them don't have analogues in homogeneous fluid.
 Their properties are defined viscosity, stratification, diffusion and the geometry of the problem;
 \item For a complete description of the flow of fluid you must consider all parameters (viscosity,
-stratification diffusion);
+stratification, diffusion);
 \item Create solver for calculation of the internal gravity waves in a continuesly stratified fluid;
-\item Calculations case horizontal plate.
+\item Calculations case horizontal plate for two types of the sources: friction and piston.
+\end{enumerate}
+}
+
+\subsection{Thank you}
+\frame{\frametitle{}
+Thank you
 \end{enumerate}
 }
 
